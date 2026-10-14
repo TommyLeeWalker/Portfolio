@@ -1,0 +1,27 @@
+/* Landing-page styles. The original client-page stylesheet is unchanged. */
+[hidden]{display:none!important}
+.intro-nav-link{display:block;margin:32px 12px 0;padding:10px 0;font-size:13px;color:var(--muted)}
+.intro-nav-link[aria-current="page"]{color:var(--ink);font-weight:600}
+.intro-nav-link + .nav-heading{margin-top:23px}
+.home-hero{padding:72px 0 68px;max-width:900px}
+.home-eyebrow{font-size:10px;letter-spacing:1.5px;color:var(--muted);margin:0 0 28px;line-height:1.8}
+.home-hero h1{font-size:clamp(48px,5.7vw,88px);line-height:1.05;letter-spacing:-3.5px;margin:0 0 32px}
+.home-lead{max-width:650px;font-size:clamp(19px,1.8vw,25px);line-height:1.5;letter-spacing:-.4px;margin:0 0 18px}
+.home-description{max-width:610px;font-size:15px;line-height:1.85;color:var(--muted);margin:0}
+.home-actions{display:flex;flex-wrap:wrap;align-items:center;gap:28px;margin-top:32px;font-size:13px}
+.home-actions span{margin-left:20px}
+.home-primary{background:var(--ink);color:var(--paper);padding:17px 22px;border-radius:3px}
+.home-primary:hover{background:#444}
+.home-services,.home-experience{border-top:1px solid var(--line);padding:35px 0 46px}
+.home-section-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:25px;margin-bottom:38px}
+.home-section-heading h2,.home-experience h2{font-weight:400;font-size:25px;line-height:1.3;letter-spacing:-.6px;margin:0}
+.home-section-heading>p{font-size:12px;line-height:1.7;color:var(--muted);margin:0}
+.home-service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.home-service-grid article>span{font-size:10px;color:var(--muted)}
+.home-service-grid h3{font-size:15px;font-weight:500;margin:17px 0 12px}
+.home-service-grid p,.home-experience p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}
+.home-experience{display:grid;grid-template-columns:1fr 1.6fr;gap:40px}
+.home-experience p+p{margin-top:17px}
+.home-experience .home-education{font-size:11px;margin-top:25px}
+@media(max-width:900px){.home-service-grid{gap:20px}.home-section-heading{display:block}.home-section-heading>p{margin-top:15px}.home-experience{grid-template-columns:1fr;gap:22px}}
+@media(max-width:650px){.intro-nav-link{margin:18px 0 0;padding:6px 0}.intro-nav-link + .nav-heading{margin-top:16px}.home-hero{padding:38px 0 42px}.home-hero h1{font-size:48px;letter-spacing:-2px}.home-eyebrow{font-size:9px;letter-spacing:1px}.home-lead{font-size:20px}.home-description{font-size:14px}.home-service-grid{grid-template-columns:1fr;gap:26px}.home-service-grid h3{margin-top:10px}.home-service-grid p{max-width:450px}.home-section-heading{margin-bottom:28px}#intro-page .topline{gap:15px;font-size:8px;letter-spacing:1px}}
